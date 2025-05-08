@@ -1,8 +1,9 @@
-﻿namespace LeaveManagementSystem.Domain
+﻿using LeaveManagementSystem.Domain.Common;
+
+namespace LeaveManagementSystem.Domain
 {
-	public class LeaveType
+	public class LeaveType : BaseEntity
 	{
-		public int Id { get; set; }
 		public string Name { get; set; }
 		public int NumberOfDays { get; set; }
 
