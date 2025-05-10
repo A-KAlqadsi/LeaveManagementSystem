@@ -15,6 +15,7 @@ namespace LeaveManagementSystem.UseCases
 			services.AddTransient<IEditLeaveTypeUseCase, EditLeaveTypeUseCase>();
 			services.AddTransient<IDeleteLeaveTypeUseCase, DeleteLeaveTypeUseCase>();
 			services.AddTransient<IIsLeaveTypeExistUseCase, IsLeaveTypeExistUseCase>();
+			services.AddTransient<IIsLeaveTypeNameExistsUseCase, IsLeaveTypeNameExistsUseCase>();
 			return services;
 		}
 	}
