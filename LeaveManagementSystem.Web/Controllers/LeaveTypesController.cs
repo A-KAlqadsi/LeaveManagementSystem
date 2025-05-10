@@ -74,6 +74,7 @@ namespace LeaveManagementSystem.Web.Controllers
 		// GET: LeaveTypes/Edit/5
 		public async Task<IActionResult> Edit(int? id)
 		{
+			// we stopped here
 			if (id == null)
 			{
 				return NotFound();
