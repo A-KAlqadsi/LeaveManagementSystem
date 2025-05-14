@@ -2,11 +2,11 @@
 using LeaveManagementSystem.Domain;
 using LeaveManagementSystem.UseCases.Contracts.Interfaces.LeaveTypeInterfaces;
 using LeaveManagementSystem.Web.Models.LeaveTypes;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace LeaveManagementSystem.Web.Controllers
 {
+	[Authorize(Roles = Roles.Adminstrator)]
 	public class LeaveTypesController : Controller
 	{
 		private readonly IViewLeaveTypesUseCase viewLeaveTypesUseCase;

@@ -20,8 +20,6 @@ namespace LeaveManagementSystem.Persistence
 			services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 			services.AddScoped<ILeaveTypeRepository, LeaveTypesRepository>();
 
-
-
 			return services;
 		}
 	}
